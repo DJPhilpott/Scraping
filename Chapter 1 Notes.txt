@@ -1,0 +1,15 @@
+//Chapter 1 Notes//
+
+Use urllib to perform networking/'web browser' requests.
+urllib is a standard library, so does not need to be installed
+
+BeautifulSoup is used to parse, and store XML/HTML
+
+Information of using Virtual Libraries on P26, which allows projects to e self contained regarding external libraries.
+
+Reading HTMl with BeautifulSoup creates an object that cascades through HTML tags, but can call tags in unexpected ways (see P27)
+
+Need to be able to deal with website problems. Could simply have a problem connecting to the site. If page is not found, urlopne with throw HTTPError, which can be handled with an exception. If the server cannot be found, urlopen returns a None object, so check if the returned object is Null.
+
+Before accessing a given tag in a BeautifulSoup object, should check the tag exists. If it does not, the object will be None and attempting to access the tag will throw an AttributeError. So check for both - except for the attribute error and check if the object itself is a None.
+
