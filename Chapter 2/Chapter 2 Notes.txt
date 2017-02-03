@@ -1,0 +1,35 @@
+//Chapter 2 Notes//
+
+If HTML on site appears to be convoluted, seek out a printer friendly or mobile link as these will likely be simpler. 
+If JavaScript files are on the site, inspect them for information. 
+Check URL for information
+
+CSS can also be used to scrape. Different sections and information may be distinguished using CSS due to color/font/size differences etc.
+
+.get_text() should be the last piece of processing done as it will strip tags and make it more difficult to process further.
+
+P38 has information on find() and findall() arguments. Class is reserved word in python, so use class_ instead.
+
+Children are exactly one tag below a parent. Descendants are all tags at all levels below a given parent. Search for tags will run on descendants. Use the .children tag to search only children.
+
+Siblings can be used to process through equivalent level tags
+
+Regex: (Perl Version)
+
+*			Match preceeding character 0 or more times					a*b*
++			Match preceeding character 1 or more times					a+b+
+[]			Match any character within brackets							[A-Z]*
+()			A grouped subexpression, evaled first						(a*b)*
+{m,n}		Matches preceeding between m and n times (inclusive)		a{2,3}b{2,3}
+[^]			Match any single char not in brackets						[^A-Z]*
+|			Match any character separated by pipes						b(a|i|e)d
+.			Matches any single character 								b.d
+^			Indicates char begins at beginning of string				^a
+\			Escape char (so can use special chars)						.\|\
+$			Use at end of expression, match to end of string			[A-Z]*[a-z]*$
+?!			Indicates character should not appear in specific place		^((?![A-Z]).)*$
+
+Can usually gives REGEXs as arguments for beautiful soup
+
+Can pass lambdas as arguments
+
